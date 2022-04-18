@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top letra">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top letra " id="navbar-example">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -26,16 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Quienes Somos</a>
+                <a class="nav-link" aria-current="page" href="#somos">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Destacados</a>
+                <a class="nav-link" aria-current="page" href="#destacado">Destacados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
               </li>
             </ul>          
           </div>
@@ -44,8 +44,8 @@
 
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner" data-spy="scroll" data-target="#navbar-example">
+          <div class="carousel-item active" id="inicio">
             <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
@@ -66,8 +66,8 @@
     </div>
 
     <div class="container">
-        <section class="d-none d-sm-none d-md-block">
-            <div class="text-center py-4">
+        <section class="d-none d-sm-none d-md-block" data-spy="scroll" data-target="#navbar-example" >
+            <div class="text-center py-4" id="somos">
                 <h2 class="border-bottom border-dark pb-4">¿QUIÉNES SOMOS?</h2>
             </div>
             <div class="row">
@@ -93,8 +93,8 @@
 
         </section>
 
-        <section>
-            <div class="text-center py-4">
+        <section data-spy="scroll" data-target="#navbar-example">
+            <div class="text-center py-4" id="destacado">
                 <h2>DESTACADOS</h2>
             </div>
             <div class="card-deck border-top border-dark py-4">
@@ -129,8 +129,8 @@
               </div>
         </section>
 
-        <form>
-            <div class="text-center py-4">
+        <form data-spy="scroll" data-target="#navbar-example">
+            <div class="text-center py-4" id="contacto">
                 <h2 class="border-bottom border-dark pb-4">CONTACTO</h2>
             </div>
             <div class="form-group">
@@ -168,26 +168,16 @@
   $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
+
+
+
+
+
 </script>
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
