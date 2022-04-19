@@ -145,7 +145,7 @@
                 <label for="exampleFormControlTextarea1">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn mb-5">Enviar</button>
+            <button type="submit" class="btn mb-5" id="enviarCorreo">Enviar</button>
         </form>   
     </div>
 
@@ -172,8 +172,12 @@
 
     <script>
       $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      $( "#enviarCorreo" ).click(function() {
+        alert( "El correo fue enviado correctamente..." );
+      });
     
     
     
